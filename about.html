@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--	<meta> tags		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" 
+			  content="IE=edge"> 
+		<meta name="description" 
+			  content="A St. Louis Blue Website">
+		<meta name="keywords"
+			  content="st. louis blues, hockey, stanley cup, champs">
+			  
+		<!--	title tags		-->
+		<title>LGB | About</title>
+		
+		<!--	CSS tags		-->
+		<!--	Normalize.css	-->
+		<link rel="stylesheet" 
+			  href="css/normalize.css">
+		
+		<!--	style.css		-->
+		<link rel="stylesheet" 
+			  href="css/style.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<header id="main-header">
+				<!--	https://amylynnandrews.com/html-clickable-image/	-->
+				<a href="index.html">
+					<img src="images/logo-tn.jpg" 
+						 alt="Blues Logo"
+						 id="main-image">
+				</a>
+				
+				<h1>Let's Go Blues News</h1>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="nextyear.html">NextYear</a></li>
+				</ul>
+			</nav>
+			
+			<main>
+				<h2 id=transitionsH2">Your 2019 Stanley Cup Champs!</h2>
+				<h3 id=transitionsH3">The Year In Pictures</h3>
+				
+				<div id="feature">
+					 <img src="images/01.jpg"
+						  alt="Main Image"
+						  id="featureImg"
+						  name="featureImg">
+				</div>
+				
+				<div id="thumbs">
+					<img src="images/02.jpg">
+					<img src="images/03.jpg">
+					<img src="images/04.jpg">
+					<img src="images/05.jpg">
+					<img src="images/06.jpg">
+					<img src="images/07.jpg">
+					<img src="images/08.jpg">
+					<img src="images/09.jpg">
+					<img src="images/10.jpg">
+					<img src="images/11.jpg">
+					<img src="images/12.jpg">
+					<img src="images/13.jpg">
+					<img src="images/14.jpg">
+					<img src="images/01.jpg">
+				</div>
+			</main>
+		
+			<div class="clearfix"></div>
+			
+			<footer>
+				<div id="footer">
+					<p>Not affiliated with the St. Louis Blues - &copy; 2019 JPS</p>
+					<input type="button" 
+						   value="Current Screen Size"
+						   onclick="displayCurrentScreenSize();">
+				</div>
+			</footer>
+		</div>
+		
+		<script>
+			//	Make function available after <head> loads
+			window.onload = function() {
+				//	Create an array using the 14 images
+				const images = document.getElementsByTagName("img");
+				
+				//	Loop through the images array.  Add a click listener
+				//	to each image, so that when it is clicked, it will
+				//	replace the current featured image above thumbnails.
+				//alert("Debug!!!  The length of the images is: " + images.length );
+				for (var i = 2; i < images.length; ++i)
+				{
+					images[i].addEventListener('click', function() {
+						let loc = this.src;
+						
+						document.getElementById('featureImg').src = loc;							
+					});
+				}
+			}
+		</script>
+				
+		<script type="text/javascript">
+			function displayCurrentScreenSize()
+			{
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				alert("Width: " +  w  + "\nHeight: " + h);
+			}
+		</script>
+	</body>
+</html>

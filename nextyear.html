@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--	<meta> tags		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" 
+			  content="IE=edge"> 
+		<meta name="description" 
+			  content="A St. Louis Blue Website">
+		<meta name="keywords"
+			  content="st. louis blues, hockey, stanley cup, champs">
+			  
+		<!--	title tags		-->
+		<title>LGB | Next Year</title>
+		
+		<!--	CSS tags		-->
+		<!--	Normalize.css	-->
+		<link rel="stylesheet" 
+			  href="css/normalize.css">
+		
+		<!--	style.css		-->
+		<link rel="stylesheet" 
+			  href="css/style.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<header id="main-header">
+				<!--	https://amylynnandrews.com/html-clickable-image/	-->
+				<a href="index.html">
+					<img src="images/logo-tn.jpg" 
+						 alt="Blues Logo"
+						 id="main-image">
+				</a>
+				
+				<h1>Let's Go Blues News</h1>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">NextYear</a></li>
+				</ul>
+			</nav>
+			
+			<main>
+				<h2>How Many Games Blues Will The Win In 2020 (0 - 98)</h2>
+				
+				<h3><span>Compare Your MANDATORY Guess To The Magic 8 Ball's</span></h2>
+				
+				<div id="ball">
+					<img src="images/magic8ball.png" 
+						 alt="Magic 8 Ball">
+				</div>
+				
+				<div id="table">
+					<table border="1" align="center">
+						<caption>
+							How We Got 98
+						</caption>
+						
+						<thead>
+							<tr>
+								<th>
+									Max Season Wins
+								</th>
+								<th>
+									Max Playoff Wins
+								</th>
+								<th>
+									Possible Total Wins
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>
+									82
+								</th>
+								<th>
+									16
+								</th>
+								<th>
+									98
+								</th>
+							</tr>
+						</tbody>
+						
+						<tfoot></tfoot>
+					</table>
+				</div>
+	
+				<form method="post" action="#"
+					  id="nextYearForm"
+					  name="nextYearForm">
+					<div class="centerMe">
+						<label for="guess">
+							   Your Guess:
+						</label>
+						
+						<input type="text"
+							   id="guess"
+							   name="guess"
+							   required>&nbsp;&nbsp;
+						<span class="spaces">*</span>
+					</div>
+			
+					<div class="centerMe">
+						<label for="guessStatus">
+							   Magic 8 Ball's Prediction:
+						</label>
+
+						<input type="text"
+							   id="guessStatus"
+							   name="guessStatus"
+							   disabled>
+					</div><br>
+					
+					<div id="buttons">
+						<input type="button" id="calculate" value="Check Guess">&nbsp;&nbsp;&nbsp;
+						<input type="button" id="reset" 	value="Reset Form">&nbsp;&nbsp;&nbsp;
+						<input type="button" id="newNumber" value="New Number">
+					</div>
+				</form>
+	
+				<script src="js/guessingGame.js"></script>
+			</main>
+		
+			<div class="clearfix"></div>
+			
+			<footer>
+				<div id="footer">
+					<p>Not affiliated with the St. Louis Blues - &copy; 2019 JPS</p>
+					<input type="button" 
+						   value="Current Screen Size"
+						   onclick="displayCurrentScreenSize();">
+				</div>
+			</footer>
+		</div>
+				
+		<script type="text/javascript">
+			function displayCurrentScreenSize()
+			{
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				alert("Width: " +  w  + "\nHeight: " + h);
+			}
+		</script>
+	</body>
+</html>

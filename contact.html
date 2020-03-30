@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--	<meta> tags		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="description" content="A St. Louis Blue Website">
+		<meta name="keywords"
+			  content="st. louis blues, hockey, stanley cup, champs">
+			  
+		<!--	title tags		-->
+		<title>LGB | Contact</title>
+		
+		<!--	CSS tags		-->
+		<!--	Normalize.css	-->
+		<link rel="stylesheet" href="css/normalize.css">
+		
+		<!--	style.css		-->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<header id="main-header">
+				<!--	https://amylynnandrews.com/html-clickable-image/	-->
+				<a href="index.html">
+					<img src="images/logo-tn.jpg" 
+						 alt="Blues Logo"
+						 id="main-image">
+				</a>
+				
+				<h1>Let's Go Blues News</h1>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="nextyear.html">NextYear</a></li>
+				</ul>
+			</nav>
+			
+			<main>
+				<h2 id="subscribeH2">
+					Please Subscribe To Our Newsletter!
+				</h2>
+				
+				<h3 id="subscribeH3">
+					All fields required.
+				</h3>
+
+				<div id="formDiv">
+					<!--	https://www.w3schools.com/howto/howto_css_responsive_form.asp	-->
+					<form method="post"
+						  action=""
+						  id="contact-form">
+						<div class="row">
+							<div class="col-25">
+								<label for="firstName">
+									   First Name:
+								</label>
+							</div>
+							<div class="col-75">
+								<input type="text"
+									   id="firstName"
+									   name="firstName"
+									   required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-25">
+								<label for="lastName">
+									   Last Name:
+								</label>
+							</div>
+							<div class="col-75">
+								<input type="text"
+									   id="lastName"
+									   name="lastName"
+									   required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-25">
+								<label for="address">
+									   Address:
+								</label>
+							</div>
+							<div class="col-75">
+								<input type="text"
+									   id="address"
+									   name="address"
+									   required>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-25">
+								<label for="city">
+									   City:
+								</label>
+							</div>
+							<div class="col-75">
+								<input type="text"
+									   id="city"
+									   name="city"
+									   required>
+							</div>
+						</div>
+						
+						<!--	https://www.freeformatter.com/usa-state-list-html-select.html  -->
+						<div class="row">
+							<div class="col-25">
+								<label for="state">
+									   State:
+								</label>
+							</div>
+							<div class="col-75">
+								<select>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District Of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO" selected>Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-25">
+								<label for="zip">
+									   Zip:
+								</label>
+							</div>
+							<!--	http://html5pattern.com/Postal_Codes	-->
+							<div class="col-75">
+								<input type="text"
+									   id="zip"
+									   name="zip"
+									   pattern="(\d{5}([\-]\d{4})?)"
+									   required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-25">
+								<label for="email">
+									   Email:
+								</label>
+							</div>
+							<div class="col-75">
+								<input type="email"
+									   id="email"
+									   name="email"
+									   pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+									   required>
+							</div>
+						</div><br>
+						
+						<div class="row">
+							<div id="buttons">
+						
+							<input type="submit"
+								   id="submit"
+								   name="submit"
+								   value="Submit">&nbsp;&nbsp;
+							<input type="reset"
+								   id="reset"
+								   name="reset"
+								   value="Reset">
+							</div>
+						</div>
+					</form>
+				</div>
+			</main>
+			
+			<div class="clearfix"></div>
+			
+			<footer id="footer">
+				<p>
+					Not affiliated with the St. Louis Blues 
+					- &copy; 2019 JPS
+				</p>
+				<input type="button" 
+					   value="Current Screen Size"
+					   onclick="displayCurrentScreenSize();">
+			</footer>
+		</div>
+				
+		<script type="text/javascript">
+			function displayCurrentScreenSize()
+			{
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				alert("Width: " +  w  + "\nHeight: " + h);
+			}
+		</script>
+	</body>
+</html>

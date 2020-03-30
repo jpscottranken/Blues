@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--	<meta> tags		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" 
+			  content="IE=edge"> 
+		<meta name="description" 
+			  content="A St. Louis Blue Website">
+		<meta name="keywords"
+			  content="st. louis blues, hockey, stanley cup, champs">
+			  
+		<!--	title tags		-->
+		<title>LGB | Home</title>
+		
+		<!--	CSS tags		-->
+		<!--	Normalize.css	-->
+		<link rel="stylesheet" 
+			  href="css/normalize.css">
+		
+		<!--	style.css		-->
+		<link rel="stylesheet" 
+			  href="css/style.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<header id="main-header">
+				<!--	https://amylynnandrews.com/html-clickable-image/	-->
+				<a href="#">
+					<img src="images/logo-tn.jpg" 
+						 alt="Blues Logo"
+						 id="main-image">
+				</a>
+				
+				<h1>Let's Go Blues News</h1>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="nextyear.html">NextYear</a></li>
+				</ul>
+			</nav>
+			
+			<main>
+				<section>
+					<article>
+						<h2>Blues Win The Cup!</h2>
+
+						<!--	https://support.google.com/youtube/answer/171780?hl=en  -->
+						<!--	https://help.viostream.com/hc/en-us/articles/115016053247-How-to-make-your-Iframe-embed-responsive-  -->
+						<div id="iframeEndOfGame">
+							<iframe width="100%" 
+									height="100%" 
+									src="https://www.youtube.com/embed/ErDYd6GO16o" 
+									frameborder="0" 
+									allow="accelerometer; 
+									autoplay; 
+									encrypted-media; 
+									gyroscope; 
+									picture-in-picture" 
+									allowfullscreen>
+							</iframe>
+						</div>
+					
+						<p>
+							Praesent arcu neque, consectetur et sem et, 
+							ornare lacinia tellus. Vestibulum quis 
+							faucibus turpis. Proin arcu nulla, rhoncus 
+							non viverra posuere, luctus ut enim. 
+							Suspendisse accumsan quam in mauris 
+							vulputate, vitae ultrices lacus pharetra. 
+							Mauris ac pellentesque augue, non fermentum 
+							ex. Vivamus luctus nisl convallis massa 
+							volutpat bibendum. Nam ac nulla varius nisl 
+							efficitur bibendum eget at massa. Vivamus 
+							egestas risus in turpis imperdiet finibus. 
+							Donec non libero scelerisque, aliquet odio 
+							id, luctus lorem. Nunc tincidunt, lacus sed 
+							scelerisque rhoncus, ante diam malesuada dui, 
+							vitae laoreet metus orci eu arcu. Donec a 
+							dapibus sapien, in sollicitudin neque. 
+							Interdum et malesuada fames ac ante ipsum 
+							primis in faucibus.
+						</p>
+					</article>
+					
+					<aside>
+						<h3>What A Parade!</h3>
+
+						<div id="iframeParade">
+							<iframe width="100%" 
+									height="100%" 
+									src="https://www.youtube.com/embed/hTrVQhX5_FA" 
+									frameborder="0" 
+									allow="accelerometer; 
+									autoplay; 
+									encrypted-media; 
+									gyroscope; 
+									picture-in-picture" 
+									allowfullscreen>
+							</iframe>
+						</div>
+						
+						<p>
+							Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Pellentesque sit amet 
+							bibendum nunc. Vivamus bibendum nulla ut 
+							vehicula commodo. Aenean aliquam purus 
+							consequat metus tincidunt, eget scelerisque 
+							sem dignissim.
+						</p>
+					</aside>
+				</section>
+			</main>
+		
+			<div class="clearfix"></div>
+			
+			<footer>
+				<div id="footer">
+					<p>Not affiliated with the St. Louis Blues - &copy; 2019 JPS</p>
+					<input type="button" 
+						   value="Current Screen Size"
+						   onclick="displayCurrentScreenSize();">
+				</div>
+			</footer>
+		</div>
+				
+		<script type="text/javascript">
+			function displayCurrentScreenSize()
+			{
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				alert("Width: " +  w  + "\nHeight: " + h);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,414 @@
+/*	Global settings	*/
+
+/*	https://www.w3schools.com/cssref/css3_pr_box-sizing.asp	*/
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: arial, helvetica, sans-serif;
+	background: #ccc;
+	font-size: 1rem;
+}
+
+#container
+{
+	width: 85%;
+	background-color: #FCB514;
+	color: #002F87;
+	margin: 1rem auto;
+	border-radius: 0.625rem;
+	overflow: auto;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0;
+}
+
+/*	Page-Agnostic CSS	*/
+h2, h3
+{
+	text-align: center;
+}
+
+h3
+{
+	margin-top: 1.5rem;
+	margin-bottom: 1.25rem;
+}
+
+nav
+{
+	height: 2.5rem;
+	background-color: #041E42;
+	overflow: hidden;
+}
+
+nav ul li
+{
+	float: left;
+	padding: 0.625rem 0.625rem 0 0.625rem;
+	list-style-type: none;
+}
+
+nav ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover
+{
+	color: #ccc;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+
+/*	Main Page CSS	*/
+main
+{
+	padding: 1.25rem;
+}
+
+#main-image
+{
+	padding-top: 1rem;
+}
+
+header#main-header
+{
+	background-color: #002F87;
+	color: #FCB514;
+	text-align: center;
+	padding: 0.25rem;
+}
+
+article
+{
+	width: 70%;
+	float: left;
+}
+
+aside
+{
+	width: 20%;
+	float: right;
+}
+
+/*	About Page CSS		*/
+h2#transitionsH2
+{
+	font-size: 2rem;
+}
+
+h3#transitionsH3
+{
+	font-size: 1.5srem;
+}
+
+#feature,
+#thumbs
+{
+	text-align: center;
+}
+
+#feature img
+{
+	width: 50%;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+#thumbs img
+{
+	width: 20%;
+	margin: 1rem;
+	opacity: 0.35;
+	box-shadow: 2px 2px #ccc;
+}
+
+#thumbs img:hover
+{
+	opacity: 1.0;
+	transition: opacity 1s;
+	transition-delay: 1s;
+	transform: rotate(5deg);
+	transform: scale(1.2, 1.2);
+}
+
+/*	Contact Page CSS	*/
+#subscribeH2
+{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#subscribeH3
+{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+label
+{
+	padding: 0.625rem 0.625rem 0.625rem 0;
+	display: inline-block;
+	text-align: right;
+}
+
+input[type=text],
+input[type=email],
+select
+{
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+}
+
+#submit,
+#reset,
+#calculate,
+#newNumber
+{
+	background-color: #002F87;
+	color: #FCB514;
+	padding: 0.75rem 1.25rem;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+#buttons
+{
+	text-align: center;
+}
+
+#submit:hover,
+#reset:hover,
+#calculate:hover,
+#newNumber:hover
+{
+	background-color: #000;
+	color: #fff;
+}
+
+.col-25
+{
+	float: left;
+	width: 25%;
+	text-align: right;
+	margin-top: 0.25rem;
+}
+
+
+.col-75
+{
+	float: left;
+	width: 55%;
+	margin-top: 0.25rem;
+}
+
+/*	https://www.w3schools.com/howto/howto_css_clearfix.asp	*/
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*	NextYear Page CSS	*/
+#ball
+{
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#table
+{
+	background-color: #002F87;
+	color: #FCB514;
+	width: 100%;
+	padding: 1rem;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.centerMe label,
+.centerMe input[type=text]
+{
+/*	width: 40rem;	*/
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: left;
+}
+
+/*.centerMe input[type=text]
+{
+	width: 40rem;
+	margin-bottom: 0.5rem;
+}*/
+
+span
+{
+	color: red;
+	font-weight: bold;
+}
+
+span.spaces
+{
+	margin-left: 15px;
+}
+
+/*	Footer CSS	*/
+#footer
+{
+	background-color: #002F87;
+	color: #FCB514;
+	text-align: center;
+	padding: 0.25rem;
+	font-size: 0.5rem;
+	margin: 0 auto;
+}
+
+/*
+	Media Queries	
+	-------------
+	
+	Please see the following URL:
+	https://stackoverflow.com/questions/13847755/css-media-queries-for-screen-sizes
+*/
+@media screen and (min-width: 250px) and (max-width: 900px)
+{
+	article, aside
+	{
+		width: 100%;
+		float: none;
+	}
+  
+	h1, h2, h3, p
+	{
+		text-align: center;
+		font-size: 0.75rem;
+	}
+  
+	nav ul li a
+	{
+		font-size: 0.66rem;
+	}
+} 
+
+@media screen and (min-width: 250px) and (max-width: 500px)
+{
+	#subscribeH2,
+	#transitionsH2
+	{
+		font-size: 1rem;
+	}
+	
+	#subscribeH3,
+	#transitionsH3
+	{
+		font-size: 0.75rem;
+	}
+	
+	#footer p
+	{
+		font-size: 0.5rem;
+	}
+	
+	#submit
+	{
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 501px)
+{
+	#footer p
+	{
+		font-size: 0.75rem;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.col-25, 
+	.col-75, 
+	input[type=submit],
+	input[type=reset],
+	{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	.col-25
+	{
+		text-align: left;
+	}
+	
+	input[type=submit],
+	input[type=reset]
+	{
+		margin-bottom: 0.25rem;
+	}
+	
+	label
+	{
+		font-size: 0.75rem;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	#submit,
+	#reset,
+	#calculate,
+	#newNumber
+	{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0.25rem;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 715px)
+{
+	#subscribeH2,
+	#transitionsH2
+	{
+		font-size: 1rem;
+	}
+	
+	#subscribeH3,
+	#transitionsH3
+	{
+		font-size: 0.75rem;
+	}
+}
+
+@media screen (max-width: 664px)
+{
+	form .centerMe label
+	{
+		display: block;
+	}
+	
+	form .centerMe input[type=text]
+	{
+		width 100%;
+	}
+}
